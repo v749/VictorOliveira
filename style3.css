@@ -1,0 +1,156 @@
+.menu6 {
+  height: 7vh;
+  background: green;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  position: fixed;
+  margin: auto;
+  top: 0%;
+  left: 60%;
+}
+.Programas6 {
+  position: relative;
+  color: black;
+}
+
+.Programas6 ul {
+  position: absolute;
+  list-style: none;
+  background: green;
+  margin-top: 10px;
+  left: 0%;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.home6,
+.contato6 {
+  position: relative;
+}
+.Programas6 a {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+}
+.Programas6 li {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Programas6 li:hover {
+  background-color: greenyellow;
+}
+.menu6 button,
+.home6,
+.contato6,
+.Programas6 {
+  color: black;
+  background: green;
+  border: none;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.metas6,
+.selos3 {
+  pointer-events: all;
+}
+.menu6,
+.botao6:hover,
+.contato6:hover,
+.home6:hover,
+.Programas6:hover {
+  color: greenyellow;
+}
+.menu6,
+.botao6 {
+  color: black;
+}
+.Programas6 button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.Programas6,
+.botao6 {
+  color: black;
+}
+.coluna6 {
+  color: green;
+  background: green;
+  position: absolute;
+  left: 95%;
+  width: 5%;
+  height: 238%;
+  top: 0%;
+}
+.p1 {
+  line-height: 0.8cm;
+  text-align: justify;
+  margin-left: 1.5cm;
+  margin-right: 4cm;
+}
+.p2 {
+  line-height: 0.8cm;
+  text-align: justify;
+  margin-left: 1.5cm;
+  margin-right: 4cm;
+  font-weight: bold;
+}
+.titulo4 {
+  color: rgb(10, 92, 10);
+  font-weight: bolder;
+  margin-top: 38px;
+  font-size: 30pt;
+}
+body {
+  margin: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 1cm;
+  margin-left: 1cm;
+}
+.dados {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+.dic {
+  position: absolute;
+  top: 149%;
+  left: 28%;
+}
+.bd {
+  top: 140%;
+  position: absolute;
+  align-content: center;
+  margin-left: 1.5cm;
+  margin-right: 4cm;
+  font-weight: bold;
+}
+.fonte {
+  position: absolute;
+  top: 130.5%;
+  left: 37%;
+  font-size: 10pt;
+}
+.fonte2 {
+  position: absolute;
+  top: 226%;
+  left: 38%;
+  font-size: 10pt;
+}
+.logotipo {
+  position: absolute;
+  top: 18px;
+  left: 30%;
+}

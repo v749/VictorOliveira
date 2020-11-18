@@ -1,0 +1,186 @@
+body {
+  margin: 20px;
+  margin-right: 5cm;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 1cm;
+  margin-left: 1cm;
+}
+.sus {
+  color: rgb(10, 92, 10);
+  font-weight: bolder;
+  margin-top: 25px;
+  font-size: 30pt;
+}
+.sus a {
+  text-decoration: none;
+  color: rgb(10, 92, 10);
+}
+
+div {
+  display: block;
+}
+
+h3 {
+  color: rgb(124, 10, 10);
+  margin-left: 1.5cm;
+}
+.legenda2 {
+  position: absolute;
+  font-size: 10pt;
+  margin-left: 12.5cm;
+  top: 50.5cm;
+}
+.legenda3 {
+  position: absolute;
+  font-size: 10pt;
+  margin-left: 12cm;
+  top: 51cm;
+}
+.imagem {
+  margin-left: 5cm;
+}
+
+.coluna {
+  color: green;
+  background: green;
+  position: absolute;
+  left: 95%;
+  width: 5%;
+  height: 295%;
+  top: 0%;
+}
+
+.p1 {
+  line-height: 0.8cm;
+  text-align: justify;
+  margin-left: 1.5cm;
+  margin-right: 4cm;
+}
+.p2 {
+  font-size: 14pt;
+  line-height: 0.8cm;
+  text-align: justify;
+  margin-left: 1.5cm;
+  margin-right: 4cm;
+}
+.menu2 {
+  height: 7vh;
+  background: green;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  position: fixed;
+  margin: auto;
+  top: 0%;
+  left: 60%;
+}
+.Programas2 {
+  position: relative;
+  color: black;
+}
+
+.Programas2 ul {
+  position: absolute;
+  list-style: none;
+  background: green;
+  margin-top: 10px;
+  left: 0%;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.home2,
+.contato2 {
+  position: relative;
+}
+.Programas2 a {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+}
+.Programas2 li {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Programas2 li:hover {
+  background-color: greenyellow;
+}
+.menu2 button,
+.home2,
+.contato2,
+.Programas2 {
+  color: black;
+  background: green;
+  border: none;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu2,
+.botao2:hover,
+.contato2:hover,
+.home2:hover,
+.Programas2:hover {
+  color: greenyellow;
+}
+.menu2,
+.botao2 {
+  color: black;
+}
+.Programas2 button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+.inicio,
+.selo1 {
+  pointer-events: all;
+}
+.Programas2,
+.botao2 {
+  color: black;
+}
+.container2 {
+  height: 600px;
+  width: 800px;
+  left: 2cm;
+  top: 34.5cm;
+}
+.container2 img {
+  margin-left: 4cm;
+  top: 34.5cm;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+}
+.transition-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5 s ease;
+}
+.transition-image:hover {
+  opacity: 1;
+}
+.container2::after {
+  content: "";
+  background: black;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: 34.5cm;
+  left: 5cm;
+  opacity: 0;
+}
+.container2:hover::after {
+  opacity: 0.05;
+}

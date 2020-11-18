@@ -1,0 +1,286 @@
+body {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.form,
+.form2,
+.form3 {
+  margin-top: 3cm;
+  width: 30%;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  left: 8cm;
+  padding: -900px;
+}
+.form input,
+.form2 input,
+.form3 input {
+  width: 20%;
+  height: 30%;
+  padding-top: 100px;
+  color: rgb(6, 53, 6);
+  border: none;
+  outline: none;
+}
+.form label,
+.form2 label,
+.form3 label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 60%;
+  height: 17%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after,
+.form2 label::after,
+.form3 label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgb(6, 53, 6);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.contentnome,
+.contentemail,
+.contenttel {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .labelnome,
+.form input:valid + .labelnome,
+.contentnome {
+  transform: translateY(-150%);
+  font-size: 12pt;
+  color: rgb(6, 53, 6);
+}
+.form2 input:focus + .labelemail,
+.form2 input:valid + .labelemail,
+.contentemail {
+  transform: translateY(-150%);
+  font-size: 12pt;
+  color: rgb(6, 53, 6);
+}
+.form3 input:focus + .labeltel,
+.form3 input:valid + .labeltel,
+.contentel {
+  transform: translateY(-200%);
+  font-size: 12pt;
+  color: rgb(6, 53, 6);
+}
+.form input:focus + .labelnome::after,
+.form input:valid + .labelnome::after {
+  transform: translateX(0%);
+}
+.form2 input:focus + .labelemail::after,
+.form2 input:valid + .labelemail::after {
+  transform: translateX(0%);
+}
+.form3 input:focus + .labeltel::after,
+.form3 input:valid + .labeltel::after {
+  transform: translateX(0%);
+}
+.contact {
+  color: darkgreen;
+  font-size: 30pt;
+  position: absolute;
+  top: 0.5cm;
+  left: 2cm;
+}
+.fale {
+  position: absolute;
+  top: 3cm;
+  left: 2cm;
+  color: darkgreen;
+}
+.header {
+  position: absolute;
+  top: 5cm;
+  left: 3cm;
+}
+.p5 {
+  position: absolute;
+  top: 4.5cm;
+  left: 2cm;
+  font-size: 14pt;
+}
+.msg {
+  position: absolute;
+  color: rgb(6, 53, 6);
+  border-color: rgb(6, 53, 6);
+  top: 18cm;
+  left: 20cm;
+  align-content: left;
+  margin-bottom: 1cm;
+}
+.menu5 {
+  height: 7vh;
+  background: green;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  position: fixed;
+  margin: auto;
+  top: 0%;
+  left: 60%;
+}
+.Programas5 {
+  position: relative;
+  color: black;
+}
+
+.Programas5 ul {
+  position: absolute;
+  list-style: none;
+  background: green;
+  margin-top: 10px;
+  left: 0%;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.home5,
+.contato5 {
+  position: relative;
+}
+.Programas5 a {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+}
+.Programas5 li {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Programas5 li:hover {
+  background-color: greenyellow;
+}
+.menu5 button,
+.home5,
+.contato5,
+.Programas5 {
+  color: black;
+  background: green;
+  border: none;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.metas5,
+.selo5 {
+  pointer-events: all;
+}
+
+.menu5,
+.botao5:hover,
+.contato5:hover,
+.home5:hover,
+.Programas5:hover {
+  color: greenyellow;
+}
+.menu5,
+.botao5 {
+  color: black;
+}
+.Programas5 button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.Programas5,
+.botao5 {
+  color: black;
+}
+.coluna5 {
+  color: green;
+  background: green;
+  position: absolute;
+  left: 95%;
+  width: 5%;
+  height: 131%;
+  top: 0%;
+}
+.send {
+  border-radius: 50mm;
+  background-color: rgb(125, 219, 125);
+  padding: 6px;
+  border-color: rgb(125, 219, 125);
+  position: absolute;
+  left: 23cm;
+  top: 20cm;
+  pointer-events: all;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.send:hover {
+  background-color: chartreuse;
+}
+.last {
+  position: absolute;
+  left: 2cm;
+  top: 7.5cm;
+}
+.fonte5 {
+  position: absolute;
+  top: 15.5cm;
+  left: 6.8cm;
+  font-size: 11pt;
+}
+.rp {
+  display: flex;
+  padding: 0cm;
+  margin-left: 51%;
+  font-size: 11pt;
+}
+footer {
+  background-color: rgb(1, 82, 1);
+  position: absolute;
+  top: 23cm;
+  align-content: center;
+  width: 100%;
+}
+.rp1 {
+  display: flex;
+  padding: 0cm;
+  margin-left: 53.5%;
+  font-size: 11pt;
+}
+.rp2 {
+  display: flex;
+  padding: 0cm;
+  margin-left: 48%;
+  font-size: 11pt;
+}
+.facebook {
+  position: absolute;
+  top: 67%;
+  left: 30cm;
+}
+.linkedin {
+  position: absolute;
+  top: 67%;
+  left: 31cm;
+}

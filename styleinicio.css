@@ -1,0 +1,195 @@
+body {
+  margin: 20px;
+  margin-right: 5cm;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 1cm;
+  margin-left: 2cm;
+  margin-bottom: 1cm;
+}
+
+.natur {
+  text-align: justify;
+  margin-right: 6cm;
+  line-height: 0.8cm;
+}
+h1 {
+  color: rgb(10, 92, 10);
+  font-weight: bolder;
+}
+div {
+  display: block;
+}
+.ambev {
+  color: rgb(124, 10, 10);
+}
+.menu {
+  height: 7vh;
+  background: green;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  position: fixed;
+  margin: auto;
+  top: 0%;
+  left: 60%;
+}
+.Programas {
+  position: relative;
+}
+.Programas ul {
+  position: absolute;
+  list-style: none;
+  background: green;
+  margin-top: 10px;
+  left: 0%;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+
+  flex-direction: column;
+
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.home,
+.contato,
+.metas {
+  position: relative;
+}
+.Programas a {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+}
+.Programas li {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Programas li:hover {
+  background-color: greenyellow;
+}
+.menu button,
+.home,
+.contato,
+.metas,
+.Programas,
+.selos2 {
+  background: green;
+  border: none;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+menu button,
+.contato:hover,
+.home:hover,
+.metas:hover,
+.Programas,
+.selos2 {
+  color: greenyellow;
+}
+.botao:hover {
+  color: greenyellow;
+}
+.Programas button:focus + ul {
+  opacity: 1;
+  pointer-events: all;
+}
+.metas,
+.selo2 {
+  pointer-events: all;
+}
+
+.cia {
+  color: rgb(124, 10, 10);
+}
+.cia a {
+  text-decoration: none;
+  color: rgb(124, 10, 10);
+}
+.coluna {
+  color: green;
+  background: green;
+  position: absolute;
+  left: 95%;
+  width: 5%;
+  height: 305%;
+  top: 0%;
+}
+.container {
+}
+.container img {
+  left: 10cm;
+  position: absolute;
+  width: 34%;
+  height: 58%;
+}
+.transition-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.transition-image:hover {
+  opacity: 1;
+}
+.container::after {
+  content: "";
+  background: black;
+  width: 34%;
+  height: 58%;
+  position: absolute;
+  left: 10cm;
+  opacity: 0;
+}
+.container:hover::after {
+  opacity: 0.05;
+}
+.p1,
+.p2 {
+  line-height: 1cm;
+  text-align: justify;
+}
+.im {
+  margin-top: 10px;
+  margin-left: 0cm;
+}
+.primeiro {
+  margin-top: 55px;
+  font-size: 30pt;
+}
+.video {
+  margin-left: 5cm;
+}
+.subtema {
+  color: rgb(2, 82, 2);
+}
+.container content {
+  display: flex;
+}
+.cap {
+  position: absolute;
+  margin-top: 200%;
+}
+.cap1 {
+  position: absolute;
+  left: 30%;
+  font-size: 10pt;
+  line-height: 0.5cm;
+}
+.space {
+  line-height: 1cm;
+}
+.cap4 {
+  position: absolute;
+  top: 53cm;
+  left: 40%;
+  font-size: 10pt;
+}
